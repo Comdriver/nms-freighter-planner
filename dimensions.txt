@@ -5,3 +5,5 @@
 21x32 = 672 pix side
 
 https://nomanssky.fandom.com/wiki/Freighter#Building_spaces
+
+central stairs cell-11-03

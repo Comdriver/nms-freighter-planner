@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>nms_freighter_planner</RootNamespace>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>nms_freighter_planner.MainForm</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
