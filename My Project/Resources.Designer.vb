@@ -63,6 +63,36 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property arrow_left_48px() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("arrow-left-48px", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property arrow_right_48px() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("arrow-right-48px", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property down_48px() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("down-48px", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property NewFile_16x() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("NewFile_16x", resourceCulture)
@@ -106,6 +136,16 @@ Namespace My.Resources
         Friend ReadOnly Property Save_grey_16x() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Save_grey_16x", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property up_48px() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("up-48px", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -22,43 +22,46 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonUp = New System.Windows.Forms.Button()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.SaveShipBtn = New System.Windows.Forms.ToolStripButton()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.LoadShipBtn = New System.Windows.Forms.ToolStripButton()
+        Me.NewShipBtn = New System.Windows.Forms.ToolStripButton()
+        Me.PrintShipBtn = New System.Windows.Forms.ToolStripButton()
+        Me.ButtonDown = New System.Windows.Forms.Button()
+        Me.ButtonLeft = New System.Windows.Forms.Button()
+        Me.ButtonRight = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.ShipLayoutGB = New System.Windows.Forms.GroupBox()
-        Me.LoadShipBtn = New System.Windows.Forms.ToolStripButton()
-        Me.NewShipBtn = New System.Windows.Forms.ToolStripButton()
-        Me.PrintShipBtn = New System.Windows.Forms.ToolStripButton()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolStrip1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ShipLayoutGB.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'ButtonUp
         '
-        Me.Button1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.ButtonUp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(48, 0)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(48, 48)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "floor up"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonUp.Image = Global.nms_freighter_planner.My.Resources.Resources.up_48px
+        Me.ButtonUp.Location = New System.Drawing.Point(48, 0)
+        Me.ButtonUp.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonUp.Name = "ButtonUp"
+        Me.ButtonUp.Size = New System.Drawing.Size(48, 48)
+        Me.ButtonUp.TabIndex = 0
+        Me.ToolTip1.SetToolTip(Me.ButtonUp, "Upper Floor")
+        Me.ButtonUp.UseVisualStyleBackColor = True
         '
         'ToolStrip1
         '
@@ -78,111 +81,6 @@ Partial Class MainForm
         Me.SaveShipBtn.Size = New System.Drawing.Size(23, 22)
         Me.SaveShipBtn.Text = "ToolStripButton1"
         Me.SaveShipBtn.ToolTipText = "Save Ship Layout"
-        '
-        'Button2
-        '
-        Me.Button2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(48, 96)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(48, 48)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "floor down"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(0, 48)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(48, 48)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "rotate" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "right"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(96, 48)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(48, 48)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "rotate" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "left"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial Black", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(48, 48)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 48)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "00"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 3
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Button1, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button3, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button2, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Button4, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 1, 1)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(735, 28)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 3
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(144, 144)
-        Me.TableLayoutPanel1.TabIndex = 6
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(735, 178)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Location = New System.Drawing.Point(735, 216)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 468)
-        Me.GroupBox1.TabIndex = 8
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Elements"
-        '
-        'ShipLayoutGB
-        '
-        Me.ShipLayoutGB.Controls.Add(Me.TableLayoutPanel2)
-        Me.ShipLayoutGB.Location = New System.Drawing.Point(12, 28)
-        Me.ShipLayoutGB.Name = "ShipLayoutGB"
-        Me.ShipLayoutGB.Size = New System.Drawing.Size(717, 732)
-        Me.ShipLayoutGB.TabIndex = 9
-        Me.ShipLayoutGB.TabStop = False
-        Me.ShipLayoutGB.Text = "YourShip"
         '
         'LoadShipBtn
         '
@@ -213,6 +111,115 @@ Partial Class MainForm
         Me.PrintShipBtn.Name = "PrintShipBtn"
         Me.PrintShipBtn.Size = New System.Drawing.Size(23, 22)
         Me.PrintShipBtn.Text = "ToolStripButton4"
+        '
+        'ButtonDown
+        '
+        Me.ButtonDown.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonDown.Image = Global.nms_freighter_planner.My.Resources.Resources.down_48px
+        Me.ButtonDown.Location = New System.Drawing.Point(48, 96)
+        Me.ButtonDown.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonDown.Name = "ButtonDown"
+        Me.ButtonDown.Size = New System.Drawing.Size(48, 48)
+        Me.ButtonDown.TabIndex = 2
+        Me.ToolTip1.SetToolTip(Me.ButtonDown, "Lower Floor")
+        Me.ButtonDown.UseVisualStyleBackColor = True
+        '
+        'ButtonLeft
+        '
+        Me.ButtonLeft.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonLeft.Image = Global.nms_freighter_planner.My.Resources.Resources.arrow_right_48px
+        Me.ButtonLeft.Location = New System.Drawing.Point(0, 48)
+        Me.ButtonLeft.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonLeft.Name = "ButtonLeft"
+        Me.ButtonLeft.Size = New System.Drawing.Size(48, 48)
+        Me.ButtonLeft.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.ButtonLeft, "Rotate Layout Clockwise")
+        Me.ButtonLeft.UseVisualStyleBackColor = True
+        '
+        'ButtonRight
+        '
+        Me.ButtonRight.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonRight.Image = Global.nms_freighter_planner.My.Resources.Resources.arrow_left_48px
+        Me.ButtonRight.Location = New System.Drawing.Point(96, 48)
+        Me.ButtonRight.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonRight.Name = "ButtonRight"
+        Me.ButtonRight.Size = New System.Drawing.Size(48, 48)
+        Me.ButtonRight.TabIndex = 4
+        Me.ToolTip1.SetToolTip(Me.ButtonRight, "Rotate Layout Anticlockwise")
+        Me.ButtonRight.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial Black", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(48, 48)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(48, 48)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "00"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 3
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.ButtonUp, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.ButtonLeft, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.ButtonDown, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.ButtonRight, 2, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 1, 1)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(735, 28)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 3
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(144, 144)
+        Me.TableLayoutPanel1.TabIndex = 6
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Location = New System.Drawing.Point(735, 178)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox1, "Current Element")
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Location = New System.Drawing.Point(735, 216)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 468)
+        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Elements"
+        '
+        'ShipLayoutGB
+        '
+        Me.ShipLayoutGB.Controls.Add(Me.TableLayoutPanel2)
+        Me.ShipLayoutGB.Location = New System.Drawing.Point(12, 28)
+        Me.ShipLayoutGB.Name = "ShipLayoutGB"
+        Me.ShipLayoutGB.Size = New System.Drawing.Size(717, 732)
+        Me.ShipLayoutGB.TabIndex = 9
+        Me.ShipLayoutGB.TabStop = False
+        Me.ShipLayoutGB.Text = "YourShip"
         '
         'TableLayoutPanel2
         '
@@ -295,12 +302,12 @@ Partial Class MainForm
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonUp As Button
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents SaveShipBtn As ToolStripButton
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents ButtonDown As Button
+    Friend WithEvents ButtonLeft As Button
+    Friend WithEvents ButtonRight As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents LoadShipBtn As ToolStripButton
     Friend WithEvents NewShipBtn As ToolStripButton
@@ -312,4 +319,5 @@ Partial Class MainForm
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
