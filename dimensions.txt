@@ -1,7 +1,3 @@
 14 21x21 floors
 
-21x21= 441 tiles
-
-21x32 = 672 pix side
-
 https://nomanssky.fandom.com/wiki/Freighter#Building_spaces
