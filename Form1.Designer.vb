@@ -24,13 +24,11 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
-        Me.ButtonUp = New System.Windows.Forms.Button()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.SaveShipBtn = New System.Windows.Forms.ToolStripButton()
         Me.LoadShipBtn = New System.Windows.Forms.ToolStripButton()
         Me.NewShipBtn = New System.Windows.Forms.ToolStripButton()
         Me.PrintShipBtn = New System.Windows.Forms.ToolStripButton()
-        Me.ButtonDown = New System.Windows.Forms.Button()
         Me.ButtonLeft = New System.Windows.Forms.Button()
         Me.ButtonRight = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -44,6 +42,9 @@ Partial Class MainForm
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.CurrentLevel = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,22 +52,6 @@ Partial Class MainForm
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ButtonUp
-        '
-        Me.ButtonUp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonUp.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.level_up
-        Me.ButtonUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonUp.Location = New System.Drawing.Point(48, 0)
-        Me.ButtonUp.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonUp.Name = "ButtonUp"
-        Me.ButtonUp.Size = New System.Drawing.Size(48, 48)
-        Me.ButtonUp.TabIndex = 0
-        Me.ToolTip.SetToolTip(Me.ButtonUp, "Upper Deck")
-        Me.ButtonUp.UseVisualStyleBackColor = True
         '
         'ToolStrip1
         '
@@ -117,22 +102,6 @@ Partial Class MainForm
         Me.PrintShipBtn.Size = New System.Drawing.Size(23, 22)
         Me.PrintShipBtn.Text = "ToolStripButton4"
         '
-        'ButtonDown
-        '
-        Me.ButtonDown.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonDown.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.level_down
-        Me.ButtonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ButtonDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonDown.Location = New System.Drawing.Point(48, 96)
-        Me.ButtonDown.Margin = New System.Windows.Forms.Padding(0)
-        Me.ButtonDown.Name = "ButtonDown"
-        Me.ButtonDown.Size = New System.Drawing.Size(48, 48)
-        Me.ButtonDown.TabIndex = 2
-        Me.ToolTip.SetToolTip(Me.ButtonDown, "Lower Deck")
-        Me.ButtonDown.UseVisualStyleBackColor = True
-        '
         'ButtonLeft
         '
         Me.ButtonLeft.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -140,7 +109,7 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ButtonLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonLeft.Image = Global.nms_freighter_planner.My.Resources.Resources.arrow_right_48px
-        Me.ButtonLeft.Location = New System.Drawing.Point(0, 48)
+        Me.ButtonLeft.Location = New System.Drawing.Point(0, 0)
         Me.ButtonLeft.Margin = New System.Windows.Forms.Padding(0)
         Me.ButtonLeft.Name = "ButtonLeft"
         Me.ButtonLeft.Size = New System.Drawing.Size(48, 48)
@@ -155,7 +124,7 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ButtonRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonRight.Image = Global.nms_freighter_planner.My.Resources.Resources.arrow_left_48px
-        Me.ButtonRight.Location = New System.Drawing.Point(96, 48)
+        Me.ButtonRight.Location = New System.Drawing.Point(96, 0)
         Me.ButtonRight.Margin = New System.Windows.Forms.Padding(0)
         Me.ButtonRight.Name = "ButtonRight"
         Me.ButtonRight.Size = New System.Drawing.Size(48, 48)
@@ -170,12 +139,12 @@ Partial Class MainForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial Black", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(48, 48)
+        Me.Label1.Location = New System.Drawing.Point(735, 50)
         Me.Label1.Margin = New System.Windows.Forms.Padding(0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 48)
+        Me.Label1.Size = New System.Drawing.Size(94, 30)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "00"
+        Me.Label1.Text = "LEVEL:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TableLayoutPanel1
@@ -184,26 +153,30 @@ Partial Class MainForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.ButtonUp, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.ButtonLeft, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.ButtonDown, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.ButtonRight, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 1, 1)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(735, 28)
+        Me.TableLayoutPanel1.Controls.Add(Me.ButtonRight, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.ButtonLeft, 0, 0)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(777, 117)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 3
+        Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(144, 144)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(144, 48)
         Me.TableLayoutPanel1.TabIndex = 6
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(735, 178)
+        Me.PictureBox1.Image = Global.nms_freighter_planner.My.Resources.Resources.empty
+        Me.PictureBox1.Location = New System.Drawing.Point(48, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox1.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         Me.ToolTip.SetToolTip(Me.PictureBox1, "Current Element")
@@ -307,23 +280,58 @@ Partial Class MainForm
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'CurrentLevel
+        '
+        Me.CurrentLevel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CurrentLevel.AutoSize = True
+        Me.CurrentLevel.Font = New System.Drawing.Font("Arial Black", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CurrentLevel.Location = New System.Drawing.Point(829, 50)
+        Me.CurrentLevel.Margin = New System.Windows.Forms.Padding(0)
+        Me.CurrentLevel.Name = "CurrentLevel"
+        Me.CurrentLevel.Size = New System.Drawing.Size(41, 30)
+        Me.CurrentLevel.TabIndex = 10
+        Me.CurrentLevel.Text = "00"
+        Me.CurrentLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(873, 43)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(48, 23)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "UP"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(873, 72)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(48, 23)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "DWN"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(948, 768)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.CurrentLevel)
+        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.ShipLayoutGB)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainForm"
-        Me.Text = "NMS Freigher Planner"
+        Me.Text = "NMS Freighter Planner"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ShipLayoutGB.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -332,11 +340,8 @@ Partial Class MainForm
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents ButtonUp As Button
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents SaveShipBtn As ToolStripButton
-    Friend WithEvents ButtonDown As Button
     Friend WithEvents ButtonLeft As Button
     Friend WithEvents ButtonRight As Button
     Friend WithEvents Label1 As Label
@@ -353,4 +358,7 @@ Partial Class MainForm
     Friend WithEvents ToolTip As ToolTip
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents CurrentLevel As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
