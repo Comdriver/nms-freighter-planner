@@ -27,8 +27,12 @@ Partial Class MainForm
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.SaveShipBtn = New System.Windows.Forms.ToolStripButton()
         Me.LoadShipBtn = New System.Windows.Forms.ToolStripButton()
-        Me.NewShipBtn = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.PrintShipBtn = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.NewShipBtn = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.RedrawBtn = New System.Windows.Forms.ToolStripButton()
         Me.ButtonLeft = New System.Windows.Forms.Button()
         Me.ButtonRight = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -42,12 +46,14 @@ Partial Class MainForm
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.LevelUpBtn = New System.Windows.Forms.Button()
+        Me.LevelDownBtn = New System.Windows.Forms.Button()
         Me.CurrentLevel = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.ToolStrip1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.ShipLayoutGB.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,7 +61,7 @@ Partial Class MainForm
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveShipBtn, Me.LoadShipBtn, Me.NewShipBtn, Me.PrintShipBtn})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveShipBtn, Me.LoadShipBtn, Me.ToolStripSeparator1, Me.PrintShipBtn, Me.ToolStripSeparator2, Me.NewShipBtn, Me.ToolStripSeparator3, Me.RedrawBtn})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(948, 25)
@@ -82,15 +88,10 @@ Partial Class MainForm
         Me.LoadShipBtn.Text = "ToolStripButton2"
         Me.LoadShipBtn.ToolTipText = "Load Ship Layout"
         '
-        'NewShipBtn
+        'ToolStripSeparator1
         '
-        Me.NewShipBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.NewShipBtn.Image = Global.nms_freighter_planner.My.Resources.Resources.NewFile_16x
-        Me.NewShipBtn.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.NewShipBtn.Name = "NewShipBtn"
-        Me.NewShipBtn.Size = New System.Drawing.Size(23, 22)
-        Me.NewShipBtn.Text = "ToolStripButton3"
-        Me.NewShipBtn.ToolTipText = "New Ship"
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'PrintShipBtn
         '
@@ -101,6 +102,37 @@ Partial Class MainForm
         Me.PrintShipBtn.Name = "PrintShipBtn"
         Me.PrintShipBtn.Size = New System.Drawing.Size(23, 22)
         Me.PrintShipBtn.Text = "ToolStripButton4"
+        Me.PrintShipBtn.Visible = False
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
+        '
+        'NewShipBtn
+        '
+        Me.NewShipBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.NewShipBtn.Image = Global.nms_freighter_planner.My.Resources.Resources.NewFile_16x
+        Me.NewShipBtn.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.NewShipBtn.Name = "NewShipBtn"
+        Me.NewShipBtn.Size = New System.Drawing.Size(23, 22)
+        Me.NewShipBtn.Text = "ToolStripButton3"
+        Me.NewShipBtn.ToolTipText = "New Ship"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 25)
+        '
+        'RedrawBtn
+        '
+        Me.RedrawBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.RedrawBtn.Image = Global.nms_freighter_planner.My.Resources.Resources.Refresh_16x
+        Me.RedrawBtn.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.RedrawBtn.Name = "RedrawBtn"
+        Me.RedrawBtn.Size = New System.Drawing.Size(23, 22)
+        Me.RedrawBtn.Text = "ToolStripButton1"
+        Me.RedrawBtn.ToolTipText = "Redraw Ship"
         '
         'ButtonLeft
         '
@@ -183,6 +215,7 @@ Partial Class MainForm
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.TableLayoutPanel2)
         Me.GroupBox1.Location = New System.Drawing.Point(735, 216)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 468)
@@ -280,6 +313,28 @@ Partial Class MainForm
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'LevelUpBtn
+        '
+        Me.LevelUpBtn.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.go_up
+        Me.LevelUpBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.LevelUpBtn.Location = New System.Drawing.Point(873, 43)
+        Me.LevelUpBtn.Name = "LevelUpBtn"
+        Me.LevelUpBtn.Size = New System.Drawing.Size(48, 24)
+        Me.LevelUpBtn.TabIndex = 11
+        Me.ToolTip.SetToolTip(Me.LevelUpBtn, "Up 1 Level")
+        Me.LevelUpBtn.UseVisualStyleBackColor = True
+        '
+        'LevelDownBtn
+        '
+        Me.LevelDownBtn.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.go_down
+        Me.LevelDownBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.LevelDownBtn.Location = New System.Drawing.Point(873, 72)
+        Me.LevelDownBtn.Name = "LevelDownBtn"
+        Me.LevelDownBtn.Size = New System.Drawing.Size(48, 24)
+        Me.LevelDownBtn.TabIndex = 12
+        Me.ToolTip.SetToolTip(Me.LevelDownBtn, "Down 1 Level")
+        Me.LevelDownBtn.UseVisualStyleBackColor = True
+        '
         'CurrentLevel
         '
         Me.CurrentLevel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -295,31 +350,38 @@ Partial Class MainForm
         Me.CurrentLevel.Text = "00"
         Me.CurrentLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button1
+        'TableLayoutPanel2
         '
-        Me.Button1.Location = New System.Drawing.Point(873, 43)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(48, 23)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "UP"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(873, 72)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(48, 23)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "DWN"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.TableLayoutPanel2.ColumnCount = 5
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(6, 22)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 11
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(188, 440)
+        Me.TableLayoutPanel2.TabIndex = 0
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(948, 768)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.LevelDownBtn)
+        Me.Controls.Add(Me.LevelUpBtn)
         Me.Controls.Add(Me.CurrentLevel)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.ShipLayoutGB)
@@ -333,6 +395,7 @@ Partial Class MainForm
         Me.ToolStrip1.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ShipLayoutGB.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -359,6 +422,11 @@ Partial Class MainForm
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents CurrentLevel As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents LevelUpBtn As Button
+    Friend WithEvents LevelDownBtn As Button
+    Friend WithEvents RedrawBtn As ToolStripButton
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
 End Class
