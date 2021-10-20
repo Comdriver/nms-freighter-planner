@@ -40,6 +40,16 @@ Partial Class MainForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.ClearBtn = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.ShipLayoutGB = New System.Windows.Forms.GroupBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -50,7 +60,9 @@ Partial Class MainForm
         Me.LevelUpBtn = New System.Windows.Forms.Button()
         Me.LevelDownBtn = New System.Windows.Forms.Button()
         Me.CurrentLevel = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TestBox = New System.Windows.Forms.TextBox()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +75,7 @@ Partial Class MainForm
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveShipBtn, Me.LoadShipBtn, Me.ToolStripSeparator1, Me.PrintShipBtn, Me.ToolStripSeparator2, Me.NewShipBtn, Me.ToolStripSeparator3, Me.RedrawBtn})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveShipBtn, Me.LoadShipBtn, Me.ToolStripSeparator1, Me.PrintShipBtn, Me.ToolStripSeparator2, Me.NewShipBtn, Me.ToolStripSeparator3, Me.RedrawBtn, Me.ToolStripSeparator4, Me.ToolStripButton1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(948, 25)
@@ -72,22 +84,20 @@ Partial Class MainForm
         '
         'SaveShipBtn
         '
-        Me.SaveShipBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.SaveShipBtn.Image = Global.nms_freighter_planner.My.Resources.Resources.Save_16x
         Me.SaveShipBtn.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveShipBtn.Name = "SaveShipBtn"
-        Me.SaveShipBtn.Size = New System.Drawing.Size(23, 22)
-        Me.SaveShipBtn.Text = "ToolStripButton1"
+        Me.SaveShipBtn.Size = New System.Drawing.Size(77, 22)
+        Me.SaveShipBtn.Text = "Save Ship"
         Me.SaveShipBtn.ToolTipText = "Save Ship Layout"
         '
         'LoadShipBtn
         '
-        Me.LoadShipBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.LoadShipBtn.Image = Global.nms_freighter_planner.My.Resources.Resources.OpenFolder_16x
         Me.LoadShipBtn.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.LoadShipBtn.Name = "LoadShipBtn"
-        Me.LoadShipBtn.Size = New System.Drawing.Size(23, 22)
-        Me.LoadShipBtn.Text = "ToolStripButton2"
+        Me.LoadShipBtn.Size = New System.Drawing.Size(79, 22)
+        Me.LoadShipBtn.Text = "Load Ship"
         Me.LoadShipBtn.ToolTipText = "Load Ship Layout"
         '
         'ToolStripSeparator1
@@ -113,12 +123,11 @@ Partial Class MainForm
         '
         'NewShipBtn
         '
-        Me.NewShipBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.NewShipBtn.Image = Global.nms_freighter_planner.My.Resources.Resources.NewFile_16x
         Me.NewShipBtn.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewShipBtn.Name = "NewShipBtn"
-        Me.NewShipBtn.Size = New System.Drawing.Size(23, 22)
-        Me.NewShipBtn.Text = "ToolStripButton3"
+        Me.NewShipBtn.Size = New System.Drawing.Size(77, 22)
+        Me.NewShipBtn.Text = "New Ship"
         Me.NewShipBtn.ToolTipText = "New Ship"
         '
         'ToolStripSeparator3
@@ -128,12 +137,11 @@ Partial Class MainForm
         '
         'RedrawBtn
         '
-        Me.RedrawBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.RedrawBtn.Image = Global.nms_freighter_planner.My.Resources.Resources.Refresh_16x
         Me.RedrawBtn.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.RedrawBtn.Name = "RedrawBtn"
-        Me.RedrawBtn.Size = New System.Drawing.Size(23, 22)
-        Me.RedrawBtn.Text = "ToolStripButton1"
+        Me.RedrawBtn.Size = New System.Drawing.Size(92, 22)
+        Me.RedrawBtn.Text = "Redraw Ship"
         Me.RedrawBtn.ToolTipText = "Redraw Ship"
         '
         'ButtonLeft
@@ -233,7 +241,16 @@ Partial Class MainForm
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.ClearBtn, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button2, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button3, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button4, 3, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button5, 4, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button6, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button7, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button9, 4, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button8, 3, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 2, 1)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(6, 22)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 11
@@ -251,6 +268,118 @@ Partial Class MainForm
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(188, 440)
         Me.TableLayoutPanel2.TabIndex = 0
         '
+        'ClearBtn
+        '
+        Me.ClearBtn.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.empty
+        Me.ClearBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClearBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ClearBtn.Location = New System.Drawing.Point(0, 0)
+        Me.ClearBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.ClearBtn.Name = "ClearBtn"
+        Me.ClearBtn.Size = New System.Drawing.Size(38, 38)
+        Me.ClearBtn.TabIndex = 0
+        Me.ToolTip.SetToolTip(Me.ClearBtn, "Empty Space")
+        Me.ClearBtn.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button2.Location = New System.Drawing.Point(38, 0)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(38, 38)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "room"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button3.Location = New System.Drawing.Point(76, 0)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(38, 38)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "command room"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button4.Location = New System.Drawing.Point(114, 0)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(38, 38)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "storage"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button5.Location = New System.Drawing.Point(152, 0)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(38, 38)
+        Me.Button5.TabIndex = 4
+        Me.Button5.Text = "exomek"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button6.Location = New System.Drawing.Point(0, 38)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(38, 38)
+        Me.Button6.TabIndex = 5
+        Me.Button6.Text = "stairs"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button7.Location = New System.Drawing.Point(38, 38)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(38, 38)
+        Me.Button7.TabIndex = 6
+        Me.Button7.Text = "cor-2way"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button9.Location = New System.Drawing.Point(152, 38)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(38, 38)
+        Me.Button9.TabIndex = 9
+        Me.Button9.Text = "cor-4way"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button8.Location = New System.Drawing.Point(114, 38)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(38, 38)
+        Me.Button8.TabIndex = 8
+        Me.Button8.Text = "cor-3way"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button1.Location = New System.Drawing.Point(76, 38)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(38, 38)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "cor-corn"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'ShipLayoutGB
         '
         Me.ShipLayoutGB.Controls.Add(Me.PictureBox3)
@@ -261,7 +390,7 @@ Partial Class MainForm
         Me.ShipLayoutGB.Size = New System.Drawing.Size(717, 732)
         Me.ShipLayoutGB.TabIndex = 9
         Me.ShipLayoutGB.TabStop = False
-        Me.ShipLayoutGB.Text = "NewShip"
+        Me.ShipLayoutGB.Text = "Your Freighter"
         '
         'PictureBox3
         '
@@ -378,20 +507,32 @@ Partial Class MainForm
         Me.CurrentLevel.Text = "00"
         Me.CurrentLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button1
+        'TestBox
         '
-        Me.Button1.Location = New System.Drawing.Point(3, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(32, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TestBox.Location = New System.Drawing.Point(821, 187)
+        Me.TestBox.Name = "TestBox"
+        Me.TestBox.Size = New System.Drawing.Size(100, 23)
+        Me.TestBox.TabIndex = 13
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 25)
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.Image = Global.nms_freighter_planner.My.Resources.Resources.InformationSymbol_16x
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(78, 22)
+        Me.ToolStripButton1.Text = "Ship Stats"
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(948, 701)
+        Me.ClientSize = New System.Drawing.Size(948, 767)
+        Me.Controls.Add(Me.TestBox)
         Me.Controls.Add(Me.LevelDownBtn)
         Me.Controls.Add(Me.LevelUpBtn)
         Me.Controls.Add(Me.CurrentLevel)
@@ -400,7 +541,9 @@ Partial Class MainForm
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "MainForm"
         Me.Text = "NMS Freighter Planner"
         Me.ToolStrip1.ResumeLayout(False)
@@ -442,5 +585,17 @@ Partial Class MainForm
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents ClearBtn As Button
+    Friend WithEvents TestBox As TextBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents ToolStripButton1 As ToolStripButton
 End Class
