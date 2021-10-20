@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MainForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
@@ -33,23 +33,37 @@ Partial Class MainForm
         Me.NewShipBtn = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.RedrawBtn = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ButtonLeft = New System.Windows.Forms.Button()
         Me.ButtonRight = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.CurrentItemPicture = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.ClearBtn = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton10 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton11 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton12 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton13 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton14 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton15 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton16 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton17 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton18 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton19 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton20 = New System.Windows.Forms.RadioButton()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.ShipLayoutGB = New System.Windows.Forms.GroupBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -61,11 +75,8 @@ Partial Class MainForm
         Me.LevelDownBtn = New System.Windows.Forms.Button()
         Me.CurrentLevel = New System.Windows.Forms.Label()
         Me.TestBox = New System.Windows.Forms.TextBox()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.ShipLayoutGB.SuspendLayout()
@@ -75,10 +86,10 @@ Partial Class MainForm
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveShipBtn, Me.LoadShipBtn, Me.ToolStripSeparator1, Me.PrintShipBtn, Me.ToolStripSeparator2, Me.NewShipBtn, Me.ToolStripSeparator3, Me.RedrawBtn, Me.ToolStripSeparator4, Me.ToolStripButton1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveShipBtn, Me.LoadShipBtn, Me.ToolStripSeparator1, Me.PrintShipBtn, Me.ToolStripSeparator2, Me.NewShipBtn, Me.ToolStripSeparator3, Me.RedrawBtn, Me.ToolStripSeparator4, Me.ToolStripButton1, Me.ToolStripButton2})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(948, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(952, 25)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -144,6 +155,28 @@ Partial Class MainForm
         Me.RedrawBtn.Text = "Redraw Ship"
         Me.RedrawBtn.ToolTipText = "Redraw Ship"
         '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 25)
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.Image = Global.nms_freighter_planner.My.Resources.Resources.InformationSymbol_16x
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(78, 22)
+        Me.ToolStripButton1.Text = "Ship Stats"
+        '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripButton2.Image = Global.nms_freighter_planner.My.Resources.Resources.HelpApplication_16x
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(60, 22)
+        Me.ToolStripButton2.Text = "About"
+        '
         'ButtonLeft
         '
         Me.ButtonLeft.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -196,8 +229,8 @@ Partial Class MainForm
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.ButtonRight, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.ButtonLeft, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.CurrentItemPicture, 1, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(777, 117)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -207,50 +240,59 @@ Partial Class MainForm
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(144, 48)
         Me.TableLayoutPanel1.TabIndex = 6
         '
-        'PictureBox1
+        'CurrentItemPicture
         '
-        Me.PictureBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.nms_freighter_planner.My.Resources.Resources.empty
-        Me.PictureBox1.Location = New System.Drawing.Point(48, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(48, 48)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
-        Me.ToolTip.SetToolTip(Me.PictureBox1, "Current Element")
+        Me.CurrentItemPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CurrentItemPicture.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CurrentItemPicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CurrentItemPicture.Location = New System.Drawing.Point(48, 0)
+        Me.CurrentItemPicture.Margin = New System.Windows.Forms.Padding(0)
+        Me.CurrentItemPicture.Name = "CurrentItemPicture"
+        Me.CurrentItemPicture.Size = New System.Drawing.Size(48, 48)
+        Me.CurrentItemPicture.TabIndex = 5
+        Me.CurrentItemPicture.TabStop = False
+        Me.CurrentItemPicture.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel2)
         Me.GroupBox1.Location = New System.Drawing.Point(735, 216)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 468)
+        Me.GroupBox1.Size = New System.Drawing.Size(206, 468)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Elements"
         '
         'TableLayoutPanel2
         '
-        Me.TableLayoutPanel2.ColumnCount = 5
+        Me.TableLayoutPanel2.ColumnCount = 6
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.ClearBtn, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button3, 2, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button4, 3, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button5, 4, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button6, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button7, 1, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button9, 4, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button8, 3, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 2, 1)
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 2.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton1, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton2, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton3, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton4, 3, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton5, 4, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton6, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton7, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton8, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton9, 3, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton10, 4, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton11, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton12, 1, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton13, 2, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton14, 3, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton15, 4, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton16, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton17, 1, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton18, 2, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton19, 3, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.RadioButton20, 4, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label2, 2, 5)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(6, 22)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 11
@@ -265,120 +307,298 @@ Partial Class MainForm
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(188, 440)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(195, 440)
         Me.TableLayoutPanel2.TabIndex = 0
         '
-        'ClearBtn
+        'RadioButton1
         '
-        Me.ClearBtn.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.empty
-        Me.ClearBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClearBtn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ClearBtn.Location = New System.Drawing.Point(0, 0)
-        Me.ClearBtn.Margin = New System.Windows.Forms.Padding(0)
-        Me.ClearBtn.Name = "ClearBtn"
-        Me.ClearBtn.Size = New System.Drawing.Size(38, 38)
-        Me.ClearBtn.TabIndex = 0
-        Me.ToolTip.SetToolTip(Me.ClearBtn, "Empty Space")
-        Me.ClearBtn.UseVisualStyleBackColor = True
+        Me.RadioButton1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.empty
+        Me.RadioButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton1.Location = New System.Drawing.Point(0, 0)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton1.TabIndex = 0
+        Me.ToolTip.SetToolTip(Me.RadioButton1, "Empty Space")
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'RadioButton2
         '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button2.Location = New System.Drawing.Point(38, 0)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(38, 38)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "room"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.RadioButton2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton2.Location = New System.Drawing.Point(38, 0)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton2.TabIndex = 1
+        Me.ToolTip.SetToolTip(Me.RadioButton2, "Freighter Room")
+        Me.RadioButton2.UseVisualStyleBackColor = True
         '
-        'Button3
+        'RadioButton3
         '
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.Location = New System.Drawing.Point(76, 0)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(38, 38)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "command room"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.RadioButton3.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton3.Location = New System.Drawing.Point(76, 0)
+        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton3.TabIndex = 2
+        Me.ToolTip.SetToolTip(Me.RadioButton3, "Fleet Command Room")
+        Me.RadioButton3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'RadioButton4
         '
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button4.Location = New System.Drawing.Point(114, 0)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(38, 38)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "storage"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.RadioButton4.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton4.Location = New System.Drawing.Point(114, 0)
+        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton4.TabIndex = 3
+        Me.ToolTip.SetToolTip(Me.RadioButton4, "Orbital Exocraft Room")
+        Me.RadioButton4.UseVisualStyleBackColor = True
         '
-        'Button5
+        'RadioButton5
         '
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button5.Location = New System.Drawing.Point(152, 0)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(38, 38)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "exomek"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.RadioButton5.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton5.Location = New System.Drawing.Point(152, 0)
+        Me.RadioButton5.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton5.TabIndex = 4
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        Me.RadioButton5.Visible = False
         '
-        'Button6
+        'RadioButton6
         '
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button6.Location = New System.Drawing.Point(0, 38)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(38, 38)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "stairs"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.RadioButton6.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton6.Location = New System.Drawing.Point(0, 38)
+        Me.RadioButton6.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton6.TabIndex = 5
+        Me.ToolTip.SetToolTip(Me.RadioButton6, "Stairs Up")
+        Me.RadioButton6.UseVisualStyleBackColor = True
         '
-        'Button7
+        'RadioButton7
         '
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button7.Location = New System.Drawing.Point(38, 38)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(38, 38)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "cor-2way"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.RadioButton7.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton7.AutoSize = True
+        Me.RadioButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton7.Location = New System.Drawing.Point(38, 38)
+        Me.RadioButton7.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton7.Name = "RadioButton7"
+        Me.RadioButton7.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton7.TabIndex = 6
+        Me.ToolTip.SetToolTip(Me.RadioButton7, "Corridor 2 Way")
+        Me.RadioButton7.UseVisualStyleBackColor = True
         '
-        'Button9
+        'RadioButton8
         '
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button9.Location = New System.Drawing.Point(152, 38)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(38, 38)
-        Me.Button9.TabIndex = 9
-        Me.Button9.Text = "cor-4way"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.RadioButton8.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton8.AutoSize = True
+        Me.RadioButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton8.Location = New System.Drawing.Point(76, 38)
+        Me.RadioButton8.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton8.Name = "RadioButton8"
+        Me.RadioButton8.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton8.TabIndex = 7
+        Me.ToolTip.SetToolTip(Me.RadioButton8, "Corridor Curved")
+        Me.RadioButton8.UseVisualStyleBackColor = True
         '
-        'Button8
+        'RadioButton9
         '
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button8.Location = New System.Drawing.Point(114, 38)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(38, 38)
-        Me.Button8.TabIndex = 8
-        Me.Button8.Text = "cor-3way"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.RadioButton9.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton9.AutoSize = True
+        Me.RadioButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton9.Location = New System.Drawing.Point(114, 38)
+        Me.RadioButton9.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton9.Name = "RadioButton9"
+        Me.RadioButton9.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton9.TabIndex = 8
+        Me.ToolTip.SetToolTip(Me.RadioButton9, "Corridor Junction")
+        Me.RadioButton9.UseVisualStyleBackColor = True
         '
-        'Button1
+        'RadioButton10
         '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.Location = New System.Drawing.Point(76, 38)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(38, 38)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "cor-corn"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.RadioButton10.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton10.AutoSize = True
+        Me.RadioButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton10.Location = New System.Drawing.Point(152, 38)
+        Me.RadioButton10.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton10.Name = "RadioButton10"
+        Me.RadioButton10.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton10.TabIndex = 9
+        Me.ToolTip.SetToolTip(Me.RadioButton10, "Corridor Cross")
+        Me.RadioButton10.UseVisualStyleBackColor = True
+        '
+        'RadioButton11
+        '
+        Me.RadioButton11.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton11.AutoSize = True
+        Me.RadioButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton11.Location = New System.Drawing.Point(0, 76)
+        Me.RadioButton11.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton11.Name = "RadioButton11"
+        Me.RadioButton11.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton11.TabIndex = 10
+        Me.ToolTip.SetToolTip(Me.RadioButton11, "Storage Room 0")
+        Me.RadioButton11.UseVisualStyleBackColor = True
+        '
+        'RadioButton12
+        '
+        Me.RadioButton12.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton12.AutoSize = True
+        Me.RadioButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton12.Location = New System.Drawing.Point(38, 76)
+        Me.RadioButton12.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton12.Name = "RadioButton12"
+        Me.RadioButton12.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton12.TabIndex = 11
+        Me.ToolTip.SetToolTip(Me.RadioButton12, "Storage Room 1")
+        Me.RadioButton12.UseVisualStyleBackColor = True
+        '
+        'RadioButton13
+        '
+        Me.RadioButton13.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton13.AutoSize = True
+        Me.RadioButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton13.Location = New System.Drawing.Point(76, 76)
+        Me.RadioButton13.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton13.Name = "RadioButton13"
+        Me.RadioButton13.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton13.TabIndex = 12
+        Me.ToolTip.SetToolTip(Me.RadioButton13, "Storage Room 2")
+        Me.RadioButton13.UseVisualStyleBackColor = True
+        '
+        'RadioButton14
+        '
+        Me.RadioButton14.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton14.AutoSize = True
+        Me.RadioButton14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton14.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton14.Location = New System.Drawing.Point(114, 76)
+        Me.RadioButton14.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton14.Name = "RadioButton14"
+        Me.RadioButton14.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton14.TabIndex = 13
+        Me.ToolTip.SetToolTip(Me.RadioButton14, "Storage Room 3")
+        Me.RadioButton14.UseVisualStyleBackColor = True
+        '
+        'RadioButton15
+        '
+        Me.RadioButton15.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton15.AutoSize = True
+        Me.RadioButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton15.Location = New System.Drawing.Point(152, 76)
+        Me.RadioButton15.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton15.Name = "RadioButton15"
+        Me.RadioButton15.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton15.TabIndex = 14
+        Me.ToolTip.SetToolTip(Me.RadioButton15, "Storage Room 4")
+        Me.RadioButton15.UseVisualStyleBackColor = True
+        '
+        'RadioButton16
+        '
+        Me.RadioButton16.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton16.AutoSize = True
+        Me.RadioButton16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton16.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton16.Location = New System.Drawing.Point(0, 114)
+        Me.RadioButton16.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton16.Name = "RadioButton16"
+        Me.RadioButton16.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton16.TabIndex = 15
+        Me.ToolTip.SetToolTip(Me.RadioButton16, "Storage Room 5")
+        Me.RadioButton16.UseVisualStyleBackColor = True
+        '
+        'RadioButton17
+        '
+        Me.RadioButton17.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton17.AutoSize = True
+        Me.RadioButton17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton17.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton17.Location = New System.Drawing.Point(38, 114)
+        Me.RadioButton17.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton17.Name = "RadioButton17"
+        Me.RadioButton17.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton17.TabIndex = 16
+        Me.ToolTip.SetToolTip(Me.RadioButton17, "Storage Room 6")
+        Me.RadioButton17.UseVisualStyleBackColor = True
+        '
+        'RadioButton18
+        '
+        Me.RadioButton18.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton18.AutoSize = True
+        Me.RadioButton18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton18.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton18.Location = New System.Drawing.Point(76, 114)
+        Me.RadioButton18.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton18.Name = "RadioButton18"
+        Me.RadioButton18.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton18.TabIndex = 17
+        Me.ToolTip.SetToolTip(Me.RadioButton18, "Storage Room 7")
+        Me.RadioButton18.UseVisualStyleBackColor = True
+        '
+        'RadioButton19
+        '
+        Me.RadioButton19.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton19.AutoSize = True
+        Me.RadioButton19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton19.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton19.Location = New System.Drawing.Point(114, 114)
+        Me.RadioButton19.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton19.Name = "RadioButton19"
+        Me.RadioButton19.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton19.TabIndex = 18
+        Me.ToolTip.SetToolTip(Me.RadioButton19, "Storage Room 8")
+        Me.RadioButton19.UseVisualStyleBackColor = True
+        '
+        'RadioButton20
+        '
+        Me.RadioButton20.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RadioButton20.AutoSize = True
+        Me.RadioButton20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RadioButton20.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadioButton20.Location = New System.Drawing.Point(152, 114)
+        Me.RadioButton20.Margin = New System.Windows.Forms.Padding(0)
+        Me.RadioButton20.Name = "RadioButton20"
+        Me.RadioButton20.Size = New System.Drawing.Size(38, 38)
+        Me.RadioButton20.TabIndex = 19
+        Me.ToolTip.SetToolTip(Me.RadioButton20, "Storage Room 9")
+        Me.RadioButton20.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(79, 190)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(19, 15)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "02"
         '
         'ShipLayoutGB
         '
@@ -509,29 +729,19 @@ Partial Class MainForm
         '
         'TestBox
         '
-        Me.TestBox.Location = New System.Drawing.Point(821, 187)
+        Me.TestBox.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.TestBox.Enabled = False
+        Me.TestBox.Location = New System.Drawing.Point(777, 168)
         Me.TestBox.Name = "TestBox"
-        Me.TestBox.Size = New System.Drawing.Size(100, 23)
+        Me.TestBox.Size = New System.Drawing.Size(144, 23)
         Me.TestBox.TabIndex = 13
-        '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 25)
-        '
-        'ToolStripButton1
-        '
-        Me.ToolStripButton1.Image = Global.nms_freighter_planner.My.Resources.Resources.InformationSymbol_16x
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(78, 22)
-        Me.ToolStripButton1.Text = "Ship Stats"
+        Me.TestBox.TabStop = False
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(948, 767)
+        Me.ClientSize = New System.Drawing.Size(952, 767)
         Me.Controls.Add(Me.TestBox)
         Me.Controls.Add(Me.LevelDownBtn)
         Me.Controls.Add(Me.LevelUpBtn)
@@ -549,9 +759,9 @@ Partial Class MainForm
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
         Me.ShipLayoutGB.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -568,7 +778,6 @@ Partial Class MainForm
     Friend WithEvents NewShipBtn As ToolStripButton
     Friend WithEvents PrintShipBtn As ToolStripButton
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents ShipLayoutGB As GroupBox
     Friend WithEvents ShipCells As TableLayoutPanel
@@ -585,17 +794,30 @@ Partial Class MainForm
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents ClearBtn As Button
     Friend WithEvents TestBox As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents RadioButton6 As RadioButton
+    Friend WithEvents RadioButton7 As RadioButton
+    Friend WithEvents RadioButton8 As RadioButton
+    Friend WithEvents RadioButton9 As RadioButton
+    Friend WithEvents RadioButton10 As RadioButton
+    Friend WithEvents RadioButton11 As RadioButton
+    Friend WithEvents RadioButton12 As RadioButton
+    Friend WithEvents RadioButton13 As RadioButton
+    Friend WithEvents RadioButton14 As RadioButton
+    Friend WithEvents RadioButton15 As RadioButton
+    Friend WithEvents RadioButton16 As RadioButton
+    Friend WithEvents RadioButton17 As RadioButton
+    Friend WithEvents RadioButton18 As RadioButton
+    Friend WithEvents RadioButton19 As RadioButton
+    Friend WithEvents RadioButton20 As RadioButton
+    Friend WithEvents Label2 As Label
+    Friend WithEvents CurrentItemPicture As Button
+    Friend WithEvents ToolStripButton2 As ToolStripButton
 End Class

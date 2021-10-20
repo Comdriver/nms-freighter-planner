@@ -10,6 +10,7 @@
     Public Ship(13, 20, 20) As ShipCell 'as I remember arrays have "0" as first item not "1" so all numbers are num-1
     Public CurrentCell As ShipCell      'keeps data for possible current mouse over cell
     Public Level As Integer    'keeps current selected level
+    Public CurrentItemSelected As String
 
     Function Cell(x As Integer, y As Integer) As String
         'this turns coords into cell name
@@ -61,6 +62,7 @@
                 .BackgroundImageLayout = ImageLayout.Stretch
                 }
                 AddHandler pb.MouseHover, AddressOf CellMouseOver
+                AddHandler pb.MouseLeave, AddressOf CellMouseOut
                 ShipCells.Controls.Add(pb)
                 'this is tool tip test line, remove later
                 'ToolTip.SetToolTip(ShipCells.Controls(CName), CName)
@@ -104,5 +106,27 @@
 
     Private Sub RedrawBtn_Click(sender As Object, e As EventArgs) Handles RedrawBtn.Click
         RedrawAllCells()
+    End Sub
+
+    Private Sub NewShipBtn_Click(sender As Object, e As EventArgs) Handles NewShipBtn.Click
+        'check if ship data loaded and ask if rewrite
+        CreateNewShip()
+    End Sub
+
+    Private Sub ItemSelector(sender As Object, e As EventArgs) Handles RadioButton9.Click, RadioButton8.Click, RadioButton7.Click, RadioButton6.Click, RadioButton5.Click, RadioButton4.Click, RadioButton3.Click, RadioButton20.Click, RadioButton2.Click, RadioButton19.Click, RadioButton18.Click, RadioButton17.Click, RadioButton16.Click, RadioButton15.Click, RadioButton14.Click, RadioButton13.Click, RadioButton12.Click, RadioButton11.Click, RadioButton10.Click, RadioButton1.Click
+        'on click of a button sets curent item for editing - like room, stairs, etc
+
+        If (CurrentItemSelected = sender.Name) Then
+            CurrentItemPicture.Image = Nothing
+            CurrentItemPicture.BackgroundImage = Nothing
+            CurrentItemSelected = Nothing
+            sender.Checked = False
+            TestBox.Text = ""
+        Else
+            CurrentItemPicture.Image = sender.Image
+            CurrentItemPicture.BackgroundImage = sender.BackgroundImage
+            CurrentItemSelected = sender.Name
+            TestBox.Text = ToolTip.GetToolTip(sender)
+        End If
     End Sub
 End Class
