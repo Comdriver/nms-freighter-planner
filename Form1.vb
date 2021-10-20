@@ -1,6 +1,15 @@
 ﻿Public Class MainForm
 
-    Dim Level As Integer    'keeps current selected level
+    Class ShipCell
+        Public Property Room As String      'keeps room type, like corridor, stairs, etc
+        Public Property Type As Integer     'keeps orientation and type (1 wall, 2 walls, etc) of the room if any
+        Public Property Item As String      'keeps name of item placed in cell, like outfit staion, medium refiner, etc
+
+    End Class
+
+    Public Ship(13, 20, 20) As ShipCell 'as I remember arrays hase "0" as first item not "1" so all numbers are num-1
+    Public CurrentCell As ShipCell      'keeps data for possible current mouse over cell
+    Public Level As Integer    'keeps current selected level
 
     Function Cell(x As Integer, y As Integer) As String
         'this turns coords into cell name
@@ -23,6 +32,7 @@
 
     Private Sub RedrawCells()
         'this should redraw all cells using current level
+
     End Sub
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -32,13 +42,14 @@
         'possibly should add rotation as another array item?
         'and anothr one for placed items
 
+
         'starting at command bridge level
         LevelSet(1)
 
         'image data grid creation
 
-        For x = 1 To Ship.RowCount
-            For y = 1 To Ship.ColumnCount
+        For x = 1 To ShipCells.RowCount
+            For y = 1 To ShipCells.ColumnCount
                 CName = Cell(x, y)
                 Dim pb As New PictureBox With
                 {
@@ -48,9 +59,9 @@
                 .SizeMode = PictureBoxSizeMode.StretchImage,
                 .BackgroundImageLayout = ImageLayout.Stretch
                 }
-                Ship.Controls.Add(pb)
+                ShipCells.Controls.Add(pb)
                 'this is tool tip test line, remove later
-                ToolTip.SetToolTip(Ship.Controls(CName), CName)
+                ToolTip.SetToolTip(ShipCells.Controls(CName), CName)
             Next
         Next
         CreateNewShip()
