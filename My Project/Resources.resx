@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\elements\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HelpApplication_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HelpApplication_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rulerx" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\icons\rulerx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +142,11 @@
   <data name="level_up_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\icons\level-up-48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow-right-48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\arrow-right-48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="level-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\level-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="level_down_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\icons\level-down-48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +157,8 @@
   <data name="Save_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="level-down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\level-down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow-right-48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\arrow-right-48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="level-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\icons\level-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,7 +175,145 @@
   <data name="Save_grey_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save_grey_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HelpApplication_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HelpApplication_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="corridor-square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-str" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-str.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-str-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-str-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-t" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-t.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-t-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-t-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-t-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-t-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-t-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-t-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-u" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-u.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-u-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-u-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-u-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-u-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corridor-u-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\corridor-u-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="empty1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-1corner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-1corner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-1corner-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-1corner-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-1corner-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-1corner-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-1corner-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-1corner-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-1way" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-1way.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-1way-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-1way-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-1way-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-1way-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-1way-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-1way-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2corners" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2corners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2corners-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2corners-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2corners-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2corners-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2corners-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2corners-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2corners-d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2corners-d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2corners-d-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2corners-d-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2way" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2way.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2way-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2way-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2way-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2way-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-2way-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-2way-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-3corners" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-3corners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-3corners-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-3corners-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-3corners-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-3corners-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-3corners-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-3corners-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-3way" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-3way.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-3way-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-3way-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-3way-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-3way-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-3way-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-3way-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-4way" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-4way.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-corridor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-corridor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-corridor-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-corridor-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room-noconnection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\room-noconnection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stairs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\stairs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stairs-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\stairs-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stairs-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\stairs-180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stairs-270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\elements\stairs-270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -271,7 +271,7 @@ Partial Class MainForm
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 2.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.RadioButton1, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.RadioButton2, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.RadioButton3, 2, 0)
@@ -329,6 +329,7 @@ Partial Class MainForm
         '
         Me.RadioButton2.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton2.Location = New System.Drawing.Point(38, 0)
@@ -343,6 +344,7 @@ Partial Class MainForm
         '
         Me.RadioButton3.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton3.Location = New System.Drawing.Point(76, 0)
@@ -357,6 +359,7 @@ Partial Class MainForm
         '
         Me.RadioButton4.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton4.Location = New System.Drawing.Point(114, 0)
@@ -385,6 +388,7 @@ Partial Class MainForm
         '
         Me.RadioButton6.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.stairs
         Me.RadioButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton6.Location = New System.Drawing.Point(0, 38)
@@ -399,6 +403,7 @@ Partial Class MainForm
         '
         Me.RadioButton7.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton7.AutoSize = True
+        Me.RadioButton7.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.corridor_str
         Me.RadioButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton7.Location = New System.Drawing.Point(38, 38)
@@ -413,6 +418,7 @@ Partial Class MainForm
         '
         Me.RadioButton8.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton8.AutoSize = True
+        Me.RadioButton8.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.corridor_u
         Me.RadioButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton8.Location = New System.Drawing.Point(76, 38)
@@ -427,6 +433,7 @@ Partial Class MainForm
         '
         Me.RadioButton9.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton9.AutoSize = True
+        Me.RadioButton9.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.corridor_t
         Me.RadioButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton9.Location = New System.Drawing.Point(114, 38)
@@ -441,6 +448,7 @@ Partial Class MainForm
         '
         Me.RadioButton10.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton10.AutoSize = True
+        Me.RadioButton10.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.corridor_square
         Me.RadioButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton10.Location = New System.Drawing.Point(152, 38)
@@ -455,6 +463,7 @@ Partial Class MainForm
         '
         Me.RadioButton11.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton11.AutoSize = True
+        Me.RadioButton11.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton11.Location = New System.Drawing.Point(0, 76)
@@ -469,6 +478,7 @@ Partial Class MainForm
         '
         Me.RadioButton12.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton12.AutoSize = True
+        Me.RadioButton12.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton12.Location = New System.Drawing.Point(38, 76)
@@ -483,6 +493,7 @@ Partial Class MainForm
         '
         Me.RadioButton13.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton13.AutoSize = True
+        Me.RadioButton13.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton13.Location = New System.Drawing.Point(76, 76)
@@ -497,6 +508,7 @@ Partial Class MainForm
         '
         Me.RadioButton14.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton14.AutoSize = True
+        Me.RadioButton14.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton14.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton14.Location = New System.Drawing.Point(114, 76)
@@ -511,6 +523,7 @@ Partial Class MainForm
         '
         Me.RadioButton15.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton15.AutoSize = True
+        Me.RadioButton15.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton15.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton15.Location = New System.Drawing.Point(152, 76)
@@ -525,6 +538,7 @@ Partial Class MainForm
         '
         Me.RadioButton16.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton16.AutoSize = True
+        Me.RadioButton16.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton16.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton16.Location = New System.Drawing.Point(0, 114)
@@ -539,6 +553,7 @@ Partial Class MainForm
         '
         Me.RadioButton17.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton17.AutoSize = True
+        Me.RadioButton17.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton17.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton17.Location = New System.Drawing.Point(38, 114)
@@ -553,6 +568,7 @@ Partial Class MainForm
         '
         Me.RadioButton18.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton18.AutoSize = True
+        Me.RadioButton18.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton18.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton18.Location = New System.Drawing.Point(76, 114)
@@ -567,6 +583,7 @@ Partial Class MainForm
         '
         Me.RadioButton19.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton19.AutoSize = True
+        Me.RadioButton19.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton19.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton19.Location = New System.Drawing.Point(114, 114)
@@ -581,6 +598,7 @@ Partial Class MainForm
         '
         Me.RadioButton20.Appearance = System.Windows.Forms.Appearance.Button
         Me.RadioButton20.AutoSize = True
+        Me.RadioButton20.BackgroundImage = Global.nms_freighter_planner.My.Resources.Resources.room_noconnection
         Me.RadioButton20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RadioButton20.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton20.Location = New System.Drawing.Point(152, 114)
