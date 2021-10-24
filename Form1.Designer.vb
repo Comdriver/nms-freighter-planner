@@ -616,7 +616,7 @@ Partial Class MainForm
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(19, 15)
         Me.Label2.TabIndex = 20
-        Me.Label2.Text = "02"
+        Me.Label2.Text = "03"
         '
         'ShipLayoutGB
         '

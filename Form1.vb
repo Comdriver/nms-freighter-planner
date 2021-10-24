@@ -7,14 +7,33 @@
 
     End Class
 
+    Class Coords
+        Public Property X As Integer
+        Public Property Y As Integer
+    End Class
+
     Public Ship(13, 20, 20) As ShipCell 'as I remember arrays have "0" as first item not "1" so all numbers are num-1
     Public CurrentCell As ShipCell      'keeps data for possible current mouse over cell
     Public Level As Integer    'keeps current selected level
-    Public CurrentItemSelected As String
+    Public CurrentItemSelected As String = Nothing
 
     Function Cell(x As Integer, y As Integer) As String
         'this turns coords into cell name
         Return "Cell-" & x.ToString("D2") & "-" & y.ToString("D2")
+    End Function
+
+    Private Function CellNameToXY(MyCell As Object) As Coords
+        Dim Name As String
+        Dim Result As New Coords
+        Dim x As String
+        Dim y As String
+
+        Name = MyCell.Name
+        x = (Name.Split("-"c)(1))
+        y = (Name.Split("-"c)(2))
+        Result.X = CInt(x)
+        Result.Y = CInt(y)
+        Return Result
     End Function
 
     Function LevelSet(Lev As Integer) As Boolean
@@ -63,6 +82,7 @@
                 }
                 AddHandler pb.MouseHover, AddressOf CellMouseOver
                 AddHandler pb.MouseLeave, AddressOf CellMouseOut
+                AddHandler pb.Click, AddressOf CellSet
                 ShipCells.Controls.Add(pb)
                 'this is tool tip test line, remove later
                 'ToolTip.SetToolTip(ShipCells.Controls(CName), CName)
@@ -70,14 +90,26 @@
         Next
         CreateNewShip()
     End Sub
+    Private Sub CellValidate(Cor As Coords)
+        'turns cell image to correct one with rotation and walls
+
+    End Sub
+
     Private Sub CellMouseOver(sender As Object, e As EventArgs)
         'makes preview of room at current cell
-        TestBox.Text = sender.name
+        Dim testcoords As New Coords
+        testcoords = CellNameToXY(sender)
+        TestBox.Text = (testcoords.X.ToString & " " & testcoords.Y.ToString)
     End Sub
 
     Private Sub CellMouseOut(sender As Object, e As EventArgs)
         'resets preview back to orgin
         TestBox.Text = ""
+    End Sub
+
+    Private Sub CellMouseClick(sender As Object, e As EventArgs)
+        'applies selected item to the cell
+
     End Sub
 
     Private Sub CellSet(sender As Object, e As EventArgs)
