@@ -36,6 +36,12 @@
         Return Result
     End Function
 
+    Function GetCell(x As Integer, y As Integer) As PictureBox
+        Dim result As PictureBox
+        result = ShipCells.Controls(Cell(x, y))
+        Return result
+    End Function
+
     Function LevelSet(Lev As Integer) As Boolean
         'just something weird
         Level = Lev
@@ -43,14 +49,24 @@
         Return True
     End Function
     Private Function RedrawCell(sender As Object) As Boolean
+        'TODO
         'this should redraw single cell
         Return True
     End Function
     Private Sub RedrawAllCells()
+        'TODO set image from Ship array instead of default one
         'this should redraw all cells using current level
+        Dim ThisCell As PictureBox
+        For x = 0 To 20
+            For y = 0 To 20
+                ThisCell = GetCell(x + 1, y + 1)
+                ThisCell.BackgroundImage = My.Resources.empty
+            Next
+        Next
 
     End Sub
     Private Sub CreateNewShip()
+        'TODO create default.freighter and load it to Ship array
         'this should fill arrays with default freighter data ("default.freighter" file)
 
         'and when arrays are filled, we should do this
@@ -59,6 +75,7 @@
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim CName As String
 
+        'TODO had smth planned but forgot about that
         'here should be created array for 21x21x14 cells, will add later
         'possibly should add rotation as another array item?
         'and anothr one for placed items
@@ -75,7 +92,6 @@
                 Dim pb As New PictureBox With
                 {
                 .Name = CName,
-                .BackgroundImage = My.Resources.empty,
                 .Margin = New Padding(0, 0, 0, 0),
                 .SizeMode = PictureBoxSizeMode.StretchImage,
                 .BackgroundImageLayout = ImageLayout.Stretch
@@ -91,32 +107,42 @@
         CreateNewShip()
     End Sub
     Private Sub CellValidate(Cor As Coords)
+        'TODO read folloowing text
         'turns cell image to correct one with rotation and walls
 
     End Sub
 
     Private Sub CellMouseOver(sender As Object, e As EventArgs)
+        'TODO make sender's back and front images same as current selected
         'makes preview of room at current cell
         Dim testcoords As New Coords
         testcoords = CellNameToXY(sender)
-        TestBox.Text = (testcoords.X.ToString & " " & testcoords.Y.ToString)
+
+        ' test line, remove later
+        TestBox.Text = (sender.Name & "(" & Cell(testcoords.X, testcoords.Y) & ")")
     End Sub
 
     Private Sub CellMouseOut(sender As Object, e As EventArgs)
+        'TODO call redraw cell to replace preview with data from Ship array
         'resets preview back to orgin
         TestBox.Text = ""
     End Sub
 
     Private Sub CellMouseClick(sender As Object, e As EventArgs)
+        'TODO read following text 
         'applies selected item to the cell
 
     End Sub
 
     Private Sub CellSet(sender As Object, e As EventArgs)
+        'TODO read following text 
+        'possibly same sub as CellMouseClick
         'applyes preview room to clicked cell
+
     End Sub
 
     Private Sub PrintShipBtn_Click(sender As Object, e As EventArgs) Handles PrintShipBtn.Click
+        'TODO form a sheet of A4 with layout of current level or all levels?
         'no idea how to do this for now
     End Sub
 
@@ -141,6 +167,7 @@
     End Sub
 
     Private Sub NewShipBtn_Click(sender As Object, e As EventArgs) Handles NewShipBtn.Click
+        'TODO make checks
         'check if ship data loaded and ask if rewrite
         CreateNewShip()
     End Sub
