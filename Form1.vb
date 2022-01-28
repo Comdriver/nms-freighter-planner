@@ -13,7 +13,7 @@
     End Class
 
     Public Ship(13, 20, 20) As ShipCell 'as I remember arrays have "0" as first item not "1" so all numbers are num-1
-    Public CurrentCell As ShipCell      'keeps data for possible current mouse over cell
+    Public CurrentCell(2, 2) As ShipCell      'keeps data for possible current mouse over cell
     Public Level As Integer    'keeps current selected level
     Public CurrentItemSelected As String = Nothing
 
